@@ -1,6 +1,7 @@
 body{
   padding: 0;
   margin: 0;
+  background-color:;
 }
 .text-wrapper{
   background-image: url(../images/pizzabackground.jpg);
@@ -44,4 +45,25 @@ body{
 }
 .card{
 font-family: 'Gayathri', sans-serif;
+}
+.topping1 , .topping2 , .topping3 , .topping4, .topping5{
+display: none;
+background-color: black;
+color: white;
+opacity: 0.5;
+position: absolute;
+top: 0;
+bottom: 0;
+width: 100%;
+}
+.text-wrapper2{
+  background-image: url(../images/contactbackground.jpg);
+  text-align: center;
+  color: white;
+  padding-top: 10%;
+  padding-bottom: 5%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }

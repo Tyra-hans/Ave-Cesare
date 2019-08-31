@@ -15,6 +15,7 @@
   <title>Ave cesare</title>
 </head>
 <body>
+  <!-- home section -->
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
@@ -25,7 +26,7 @@
           </div>
         </div>
       </div>
-
+<!-- menu section -->
       <div class="container" id="types">
         <h1 class="menu">MENU</h1>
         <div class="container">
@@ -38,7 +39,7 @@
                     <h5 class="card-title">jalapeno la pazzia</h5>
                     <p class="card-text">mouth watering jalapeno madness</p>
                     <p class="card-footer">kes 1050</p>
-                    <a href="#" class="btn btn-primary">order now</a>
+                    <a href="#" class="btn btn-warning">order now</a>
                   </div>
                 </div>
               </div>
@@ -49,7 +50,7 @@
                     <h5 class="card-title">prosciutto e insalata</h5>
                     <p class="card-text">excuisite ham and salad</p>
                     <p class="card-footer">kes 1170</p>
-                    <a href="#" class="btn btn-primary">order now</a>
+                    <a href="#" class="btn btn-warning">order now</a>
                   </div>
                 </div>
               </div>
@@ -60,33 +61,100 @@
                     <h5 class="card-title">Cesare grille</h5>
                     <p class="card-text">piccanos amazing grille</p>
                     <p class="card-footer">kes 1080</p>
-                    <a href="#" class="btn btn-primary">order now</a>
+                    <a href="#" class="btn btn-warning">order now</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
+        <!-- toppings section -->
         <div class="container">
+          <h1 class="menu">Toppings</h1>
           <div class="owl-carousel owl-theme">
-            <div class="item" style="width:250px"><p>jalapeno madness</p>
-              <img src="" alt="">
+            <div class="item" style="width:250px" id="topping1">
+              <img src="images/jalapeno.jpg" alt="">
+              <div class="topping1">
+                <p>jalapeno pazzia</p>
+              </div>
             </div>
-            <div class="item" style="width:100px"><p>cheese on cheese</p>
-              <img src="" alt="">
+            <div class="item" style="width:300px" id="topping2">
+              <img src="images/corn.jpg" alt="">
+              <div class="topping2">
+                <p>corny bbq</p>
+              </div>
             </div>
-            <div class="item" style="width:500px"><p>bella mushroom</p>
-              <img src="" alt="">
+            <div class="item" style="width:350px" id="topping3">
+              <img src="images/mushrrom.png" alt="">
+              <div class="topping3">
+                <p>bella mushroom</p>
+              </div>
             </div>
-            <div class="item" style="width:100px"><p>bologna la pazzia</p>
-              <img src="" alt="">
+            <div class="item" style="width:400px" id="topping4">
+              <img src="images/chicken.jpg" alt="">
+              <div class="topping4">
+                <p>Bolgna cesare</p>
+              </div>
             </div>
-            <div class="item" style="width:50px"><p>cesare deluxe</p>
-              <img src="" alt="">
+            <div class="item" style="width:450px" id="topping5">
+              <img src="images/lunch-caesar-salad.jpg" alt="">
+              <div class="topping5">
+                <p>Cesare Deluxe</p>
+              </div>
             </div>
 
           </div>
         </div>
+        <!-- order now section -->
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h1 class="menu">order now</h1>
+            <div class="text-wrapper2">
+              <div class="col-md-6">
+      <form id="new-contact">
+        <div class="form-group">
+          <label for="new-first-name">First name</label>
+          <input type="text" class="form-control" id="new-first-name">
+        </div>
+        <div class="form-group">
+          <label for="new-last-name">Last name</label>
+          <input type="text" class="form-control" id="new-last-name">
+        </div>
+
+        <div id="new-addresses">
+          <div class="new-address">
+            <div class="form-group">
+              <label for="new-street">Street</label>
+              <input type="text" class="form-control new-street">
+            </div>
+            <div class="form-group">
+              <label for="new-city">City</label>
+              <input type="text" class="form-control new-city">
+            </div>
+            <div class="form-group">
+              <label for="new-county">County</label>
+              <input type="text" class="form-control new-county">
+            </div>
+          </div>
+        </div>
+
+        <span class="btn btn-warning" id="add-address">Another address</span>
+
+        <button type="submit" class="btn">Add</button>
+      </form>
+
+      <h2>Contacts:</h2>
+      <ul id="contacts">
+
+      </ul>
+    </div>
+            </div>
+          </div>
+</div>
+        </div>
+
       </div>
 
 
