@@ -1,7 +1,7 @@
 body{
   padding: 0;
   margin: 0;
-  background-color:;
+  background-color:#323334;
 }
 .text-wrapper{
   background-image: url(../images/pizzabackground.jpg);
@@ -20,12 +20,13 @@ body{
   margin-left: 50%;
   font-family: 'Fredericka the Great', cursive;
   font-size: 90px;
-  color: black;
+  color:#323334;
 }
 .title1{
   margin-left: 50%;
   font-family: 'Bad Script', cursive;
   font-size: 60px;
+  color: white;
 }
 .text-wrapper1{
   /* background-image: url(../images/pizzawood.jpg); */
@@ -41,20 +42,37 @@ body{
 .menu{
   text-align: center;
   font-family: 'Fredericka the Great', cursive;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 90px;
+  color:#b78b43;
 
 }
 .card{
 font-family: 'Gayathri', sans-serif;
 }
+.one{
+background-color: #008C45;
+}
+.two{
+background-color:;
+}
+.three{
+background-color: #CD212A;
+}
 .topping1 , .topping2 , .topping3 , .topping4, .topping5{
 display: none;
-background-color: black;
+text-align: center;
+font-size: 30px;
+font-family: sans-serif;
 color: white;
-opacity: 0.5;
 position: absolute;
 top: 0;
 bottom: 0;
 width: 100%;
+}
+.topping{
+transition:transform .2s;
 }
 .text-wrapper2{
   background-image: url(../images/contactbackground.jpg);
@@ -72,4 +90,7 @@ width: 100%;
 }
 .zoom:hover {
   transform: scale(1.1);
+}
+.background{
+  background-color:transparent;
 }

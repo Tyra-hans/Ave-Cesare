@@ -16,7 +16,8 @@
 </head>
 <body>
   <!-- home section -->
-  <div class="container">
+  <div class="container-fluid">
+    <div class="text-wrapper-X">
     <div class="row">
       <div class="col-sm-12">
         <div class="col-md-12">
@@ -27,14 +28,15 @@
         </div>
       </div>
 <!-- menu section -->
-      <div class="container" id="types">
+      <div class="container-fluid" id="types">
         <h1 class="menu">MENU</h1>
         <div class="container">
           <div class="text-wrapper3">
+          <div class="owl-carousel owl-theme">
           <div class="row">
             <div class="row">
-              <div class="col-md-4">
-                <div class="card zoom">
+              <div class="col-md-4 item">
+                <div class="card zoom one">
                   <img src="images/pizza1.jpg" class="card-img-top img-thumbnail" alt="">
                   <div class="card-body">
                     <h5 class="card-title">jalapeno la pazzia</h5>
@@ -44,8 +46,8 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="card zoom">
+              <div class="col-md-4 item">
+                <div class="card zoom two">
                   <img src="images/pizza2.jpg" class="card-img-top img-thumbnail" alt="">
                   <div class="card-body">
                     <h5 class="card-title">prosciutto e insalata</h5>
@@ -55,8 +57,8 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="card zoom">
+              <div class="col-md-4 item">
+                <div class="card zoom three">
                   <img src="images/piccanos.jpg" class="card-img-top img-thumbnail" alt="">
                   <div class="card-body">
                     <h5 class="card-title">Cesare grille</h5>
@@ -69,38 +71,39 @@
             </div>
           </div>
         </div>
+      </div>
         </div>
       </div>
         <!-- toppings section -->
-        <div class="container">
+        <div class="container-fluid">
           <h1 class="menu">Toppings</h1>
           <div class="owl-carousel owl-theme">
-            <div class="item" style="width:250px" id="topping1">
-              <img src="images/jalapeno.jpg" alt="">
+            <div class="item" style="width:250px; height:300px" id="topping1">
+              <img src="images/jalapeno.jpg" alt="" class="zoom topping">
               <div class="topping1">
                 <p>jalapeno pazzia</p>
               </div>
             </div>
-            <div class="item" style="width:300px" id="topping2">
-              <img src="images/corn.jpg" alt="">
+            <div class="item" style="width:400px" id="topping2">
+              <img src="images/corn.jpg" alt="" class="zoom topping">
               <div class="topping2">
                 <p>corny bbq</p>
               </div>
             </div>
-            <div class="item" style="width:350px" id="topping3">
-              <img src="images/mushrrom.png" alt="">
+            <div class="item" style="width:450px" id="topping3">
+              <img src="images/mushrrom.png" alt="" class="zoom topping">
               <div class="topping3">
                 <p>bella mushroom</p>
               </div>
             </div>
             <div class="item" style="width:400px" id="topping4">
-              <img src="images/chicken.jpg" alt="">
+              <img src="images/chicken.jpg" alt="" class="zoom topping">
               <div class="topping4">
                 <p>Bolgna cesare</p>
               </div>
             </div>
             <div class="item" style="width:450px" id="topping5">
-              <img src="images/lunch-caesar-salad.jpg" alt="">
+              <img src="images/lunch-caesar-salad.jpg" alt="" class="zoom topping">
               <div class="topping5">
                 <p>Cesare Deluxe</p>
               </div>
@@ -109,7 +112,7 @@
           </div>
         </div>
         <!-- order now section -->
-        <div class="container">
+        <div class="container-fluid">
           <div class="row">
             <div class="col-md-12">
               <h1 class="menu">Order Now</h1>
@@ -118,21 +121,21 @@
       <form id="new-contact">
         <div class="form-group">
           <label for="new-first-name">name</label>
-          <input type="text" class="form-control" id="new-name">
+          <input type="text" class="form-control background" id="new-name">
         </div>
         <div id="new-addresses">
           <div class="new-address">
             <div class="form-group">
               <label for="new-street">Street</label>
-              <input type="text" class="form-control new-street">
+              <input type="text" class="form-control new-street background">
             </div>
             <div class="form-group">
               <label for="new-city">City</label>
-              <input type="text" class="form-control new-city">
+              <input type="text" class="form-control new-city background">
             </div>
             <div class="form-group">
               <label for="new-county">County</label>
-              <input type="text" class="form-control new-county">
+              <input type="text" class="form-control new-county background">
             </div>
           </div>
         </div>
@@ -147,11 +150,22 @@
 
       </ul>
     </div>
+    <div class="col-md-6">
+          <div id="show-contact">
+            <h2></h2>
+            <p>First name: <span class="first-name"></span></p>
+            <p>Last name: <span class="last-name"></span></p>
+            <p>Addresses:</p>
+            <ul id="addresses">
+
+            </ul>
+          </div>
+        </div>
             </div>
           </div>
 </div>
         </div>
-
+</div>
       </div>
 
 
