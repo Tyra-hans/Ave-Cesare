@@ -67,3 +67,9 @@ width: 100%;
   background-size: cover;
   background-attachment: fixed;
 }
+.zoom {
+  transition:transform .2s;
+}
+.zoom:hover {
+  transform: scale(1.1);
+}
