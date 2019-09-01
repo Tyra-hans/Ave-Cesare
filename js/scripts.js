@@ -20,6 +20,7 @@ $(document).ready(function() {
   $("#topping5").hover(function(){
     $(".topping5").toggle(500);
   });
-  var jalapeno= $("#jalapeno").val();
-  
+  $("form#new-contact").submit(function(event) {
+    event.preventDefault();
+})
 });
