@@ -96,7 +96,7 @@ transition:transform .2s;
 }
 #show-contact, #crust{
   display:none;
-  float: left;
+  float: right;
 }
 h2{
   font-size: 40px;
