@@ -103,3 +103,7 @@ h2{
   font-family: 'Fredericka the Great', cursive;
   color: black;
 }
+.order{
+  display: inline;
+  width:30%;
+}

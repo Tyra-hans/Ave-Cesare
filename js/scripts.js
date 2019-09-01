@@ -23,23 +23,4 @@ $(document).ready(function() {
   $("form#new-contact").submit(function(event) {
     event.preventDefault();
 })
-$("#next").click(function() {
-    $("#add-address").toggle();
-    $("#crust").toggle();
-  });
-  $("#subit-now").click(function(event){
-    event.preventDefault();
-    var inputtedName = $("input#new-first-name").val();
-    var newContact = new Contact(inputtedFirstName);
-
-    $(".new-address").each(function() {
-      var inputtedStreet = $(this).find("input.new-street").val();
-      var inputtedEstate = $(this).find("input.new-estate").val();
-      var inputtedCity = $(this).find("input.new-city").val();
-      var inputtedInstructions = $(this).find("input.new-instructions").val();
-      var newAddress = new Address(inputtedStreet,inputtedEstate, inputtedCity, inputtedInstructions)
-      newContact.addresses.push(newAddress)
-    });
-
-  })
 });
