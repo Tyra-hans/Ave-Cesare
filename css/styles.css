@@ -94,9 +94,8 @@ transition:transform .2s;
 .background{
   background-color:transparent;
 }
-#show-contact, #crust{
+#show-contact{
   display:none;
-  float: right;
 }
 h2{
   font-size: 40px;
@@ -106,4 +105,7 @@ h2{
 .order{
   display: inline;
   width:30%;
+}
+#crust{
+float: right; 
 }
