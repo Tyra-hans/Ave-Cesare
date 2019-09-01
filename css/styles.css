@@ -98,3 +98,8 @@ transition:transform .2s;
   display:none;
   float: left;
 }
+h2{
+  font-size: 40px;
+  font-family: 'Fredericka the Great', cursive;
+  color: black;
+}
