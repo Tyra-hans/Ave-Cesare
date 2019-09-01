@@ -22,12 +22,6 @@
         <div class="col-sm-12">
           <div class="col-md-12" id="home">
             <div class="text-wrapper">
-              <div class="topnav">
-                <a class="active" href="#home">Home</a>
-                <a href="#menu">menu</a>
-                <a href="#toppings">toppings</a>
-                <a href="#checkout">checkout</a>
-              </div>
               <h1 class="title">Ave cesare</h1>
               <p class="title1">pizza like never before</p>
             </div>
@@ -126,7 +120,7 @@
             <div class="col-md-12">
               <h1 class="menu" id="checkout">checkout</h1>
               <div class="text-wrapper2">
-                <div class="bg-modal">
+                <div class="bg-modal col-md-6">
                   <div class="modal-content">
                     <h1 class="menu">Ave Cesare</h1>
                     <form class="form-container">
@@ -165,6 +159,24 @@
                         <button type="button" class="btn cancel" onclick="closeForm()">Back</button>
                     </form>
                   </div>
+                </div>
+                <div class="col-md-6" >
+                  <form class="form-container">
+                <h2>Checkout</h2>
+                <label for="name"><b>Name</b></label>
+                <input type="text" id="name" placeholder="name.." name="name" required>
+
+                <label for="phone"><b>contacts</b></label>
+                <input type="text" placeholder="07XXXXXXXX" name="number" required>
+                <button type="button" class="btn summary">
+                    <p id="summary">Summary</p>
+                </button>
+                <label for="delivery"><b>Instructions</b></label>
+                <textarea type="text" id="address" placeholder="Additional instructions" required></textarea>
+
+                <button type="button" class="btn" onclick="closeCheckOut(); confirmationPopUp();">Checkout</button>
+                <button type="button" class="btn cancel" onclick="closeCheckOut()">Back</button>
+            </form>
                 </div>
                   </form>
                 </div>
