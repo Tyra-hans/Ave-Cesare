@@ -3,7 +3,7 @@
 #### Built by **Tyra Hans**
 ## Nature
 Ave cesare -Italian for 'Hail ceaser' is an italian pizzeria that offers a pallet with an array of options.
-From hoices in toppings,crusts and sizes as well otions in delivey services.
+From choices in toppings,crusts and sizes as well options in delivey services.
 ## Setup
 * Clone this repo to your desktop
 * run this in your terminal "git remove set-url" if you wish to have it into your repository
@@ -23,14 +23,16 @@ No known bugs. If you notice any, please see contact information below.
 | crust option     |select crust          | defines crust value         |
 | toppings option  |select toppings       | defines toppings value      |
 | contacts option  |key in                | defines contacts value      |
-| delivery option  |select                | defines delivey value       |
-| message input    |key in                | defines text value          |
-| email input      |key in                | defines email value         |
-| submit           |click submit button   | executes submit action      |
+| delivery option  |select                | defines delivery value      |
+| amount input     |key in                | defines amount value        |
+| instructionsinput|key in                | defines instructions value  |
+| checkout button  |click                 | excecutes the function      |
 * Hovering over the pizza menu optionszooms in the card.
 * Hovering over toppings images zooms in and displays word overlay.
-* A form for input with Name, Email and message inputs.
+* A form for input with Name, pizza and delivery inputs.
 * A submit button.
+* A receipt is received after submitting
+* An alert is received after submitting
 ## Technologies Used
 Used HTML to create forms. Used bootstrap and a custom css stylesheet for styling. JavaScript for functionality and JQuery for animations and styling.
 ## Support and contact details
