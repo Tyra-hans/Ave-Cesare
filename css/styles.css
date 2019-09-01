@@ -29,7 +29,6 @@ body{
   color: white;
 }
 .text-wrapper1{
-  /* background-image: url(../images/pizzawood.jpg); */
   text-align: center;
   color: white;
   padding-top: 10%;
@@ -49,30 +48,30 @@ body{
 
 }
 .card{
-font-family: 'Gayathri', sans-serif;
+  font-family: 'Gayathri', sans-serif;
 }
 .one{
-background-color: #008C45;
+  background-color: #008C45;
 }
 .two{
-background-color:;
+  background-color:;
 }
 .three{
-background-color: #CD212A;
+  background-color: #CD212A;
 }
 .topping1 , .topping2 , .topping3 , .topping4, .topping5{
-display: none;
-text-align: center;
-font-size: 30px;
-font-family: sans-serif;
-color: white;
-position: absolute;
-top: 0;
-bottom: 0;
-width: 100%;
+  display: none;
+  text-align: center;
+  font-size: 30px;
+  font-family: sans-serif;
+  color: white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
 }
 .topping{
-transition:transform .2s;
+  transition:transform .2s;
 }
 .text-wrapper2{
   background-image: url(../images/contactbackground.jpg);
@@ -94,9 +93,6 @@ transition:transform .2s;
 .background{
   background-color:transparent;
 }
-#show-contact{
-  display:none;
-}
 h2{
   font-size: 40px;
   font-family: 'Fredericka the Great', cursive;
@@ -106,17 +102,11 @@ h2{
   display: inline;
   width:30%;
 }
-#crust{
-float: right;
-}
-/* Add a black background color to the top navigation */
 .topnav {
   background-color: #333;
   overflow: hidden;
   position: fixed;
 }
-
-/* Style the links inside the navigation bar */
 .topnav a {
   float: left;
   color: #F39C12;
@@ -125,15 +115,22 @@ float: right;
   text-decoration: none;
   font-size: 17px;
 }
-
-/* Change the color of links on hover */
 .topnav a:hover {
   background-color: #ddd;
   color: black;
 }
-
-/* Add a color to the active/current link */
 .topnav a.active {
   background-color: #F39C12;
   color: white;
+}
+.bg-modal{
+}
+.modal-content{
+width: 500px;
+height: 500px;
+border-radius: 3px;
+text-align: center;
+padding:20px;
+background-color: transparent;
+font-family: 'Gayathri', sans-serif;
 }
