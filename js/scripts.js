@@ -23,4 +23,8 @@ $(document).ready(function() {
   $("form#new-contact").submit(function(event) {
     event.preventDefault();
 })
+$("#next").click(function() {
+    $("#add-address").toggle();
+    $("#crust").toggle();
+  });
 });
