@@ -33,7 +33,6 @@
             </div>
           </div>
         </div>
-        <!-- pop up starts here -->
 
         <!-- menu section -->
         <div class="container-fluid" id="types">
@@ -50,7 +49,7 @@
                           <h5 class="card-title">jalapeno la pazzia</h5>
                           <p class="card-text">mouth watering jalapeno madness</p>
                           <p class="card-footer">kes 1050</p>
-                          <p id="#button1" class="btn btn-warning" onclick="openForm();" >add to cart</p>
+                          <p id="#jalapeno2" class="btn btn-warning" value="jalapeno" onclick="getValue()" >add to cart</p>
                         </div>
                       </div>
                     </div>
@@ -63,7 +62,7 @@
 
                           <p class="card-footer">kes 1170</p>
                           <p id="ham" class="btn btn-warning"
-                          value="ham" onclick="openForm(); addCartPizza();">add to cart</p>
+                          value="" onclick="getValue()">add to cart</p>
                         </div>
                       </div>
                     </div>
@@ -74,8 +73,7 @@
                           <h5 class="card-title">Cesare grille</h5>
                           <p class="card-text">piccanos amazing grille</p>
                           <p class="card-footer">kes 1080</p>
-                          <p id="grille" class="btn btn-warning"
-                          value="Veggie" onclick="openForm(); addCartPizza();">add to cart</p>
+                          <p id="grille" class="btn btn-warning" onclick="getValue()">add to cart</p>
                         </div>
                       </div>
                     </div>
@@ -137,14 +135,14 @@
                             <option></option>
                             <option id="regular" value="reg">Regular KES 1,000</option>
                             <option id="medium" value="med">Medium KES 1,500</option>
-                            <option id="large" value="lar">LargeKES 2,000</option>
+                            <option id="large" value="lar">Large KES 2,000</option>
                         </select>
                         <label for="crust"><b>Crust</b></label>
                         <select required class="form-control" id="crust">
                             <option></option>
-                            <option id="crispy" value="crispy">Crispy</option>
-                            <option id="stuffed" value="stuffed">Stuffed</option>
-                            <option id="glutten-free" value="gluttenFree">Glutten-free</option>
+                            <option id="crispy" value="crispy">Crispy KES 200</option>
+                            <option id="stuffed" value="stuffed">Stuffed KES 150</option>
+                            <option id="glutten-free" value="gluttenFree">Glutten-free KES 300</option>
                         </select>
                         <label for="toppings"><b>Toppings</b></label>
                         <select required class="form-control mb-2" id="toppings">
@@ -154,7 +152,13 @@
                             <option id="cesare" value="deluxe">cesare deluxe KES-100</option>
                             <option id="bologna" value="bologna">bologna-cesare KES-150</option>
                         </select>
-                        <label for="amunt">amount</label>
+                        <label for="delivery"><b>Delivery</b></label>
+                        <select required class="form-control" id="delivery">
+                            <option></option>
+                            <option id="delivery1" value="delivery">Delivery -KES 200</option>
+                            <option id="pickup" value="pickup">pickup</option>
+                        </select>
+                        <label for="amount">amount</label>
                         <input id="amount" class="product-quantity" name="product_quantity" value="0">
                         <button type="button" class="btn" onclick="closeForm(); openCheckOut(); addCartPizza();">Add to Cart</button>
                         <button type="button" class="btn buy" onclick="closeForm();addCartPizza();">Add and Order more</button>

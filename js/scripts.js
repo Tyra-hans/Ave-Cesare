@@ -23,5 +23,10 @@ $(document).ready(function() {
   $("form#new-contact").submit(function(event) {
     event.preventDefault();
 })
-
+// getting values
+function getValue(){
+var jalapeno = document.getElementById("jalapeno2");
+var ham =document.getElementById("ham");
+var grille=document.getElementById("grille");
+};
 });
