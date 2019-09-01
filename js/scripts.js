@@ -52,5 +52,23 @@ function getValue() {
   var total = (((pizzaNum + sizeNum + crustNum + toppingNum) *getAmountNum) + deliveryNum);
   console.log(total);
   document.getElementById("receiptvalue1").innerHTML="Your total charge: " + total;
+  // getting name and adress values
+
+  var name =document.getElementById("name").value;
+  var number=document.getElementById("number").value;
+  var adress=document.getElementById("address").value;
+// form validation
+if (pizza !== true){
+  alert("please select pizza");
+  return false;
+} else if (size.selected !== true) {
+  alert("please select size");
+  return false;
+}else if (getAmount=="") {
+  alert("please key in amount");
+  return false;
+} else{
+  alert("your order is on the way " + name + "!");
+}
 
 }

@@ -44,7 +44,7 @@
                           <h5 class="card-title">jalapeno la pazzia</h5>
                           <p class="card-text">mouth watering jalapeno madness</p>
                           <p class="card-footer" id="jalapeno2" value="jalapeno 1050">kes 1050</p>
-                          <button id="jalapeno1" class="btn btn-warning" value="jalapeno" onclick="getVal();">add to cart</button>
+                          <a href="#checkout" <button  id="jalapeno1" class="btn btn-warning" value="jalapeno" onclick="getVal();">order now</button></a>
                         </div>
                       </div>
                     </div>
@@ -54,10 +54,9 @@
                         <div class="card-body">
                           <h5 class="card-title">prosciutto e insalata</h5>
                           <p class="card-text">excuisite ham and salad</p>
-
                           <p class="card-footer">kes 1170</p>
-                          <p id="ham" class="btn btn-warning"
-                          value="" onclick="getValue()">add to cart</p>
+                          <a href="#checkout"><p id="ham" class="btn btn-warning"
+                          value="" onclick="getValue()">order now</p></a>
                         </div>
                       </div>
                     </div>
@@ -68,7 +67,7 @@
                           <h5 class="card-title">Cesare grille</h5>
                           <p class="card-text">piccanos amazing grille</p>
                           <p class="card-footer">kes 1080</p>
-                          <p id="grille" class="btn btn-warning" onclick="getValue()">add to cart</p>
+                          <a href="#checkout"><p id="grille" class="btn btn-warning" onclick="getValue()">order now</p></a>
                         </div>
                       </div>
                     </div>
@@ -165,7 +164,6 @@
                         </select>
                         <label for="amount">amount</label>
                         <input id="amount" class="product-quantity" name="product_quantity" value="0">
-                        <button type="button" class="btn" onclick="getValue();">Add to Cart</button>
                     </form>
                   </div>
                 </div>
@@ -175,14 +173,13 @@
                 <input type="text"class="form-control" id="name" placeholder="name.." name="name" required>
 
                 <label for="phone"><b>contacts</b></label>
-                <input type="text" class="form-control" placeholder="07XXXXXXXX" name="number" required>
+                <input type="text" class="form-control" id="number" placeholder="07XXXXXXXX" name="number" required>
                 <button type="button" class="btn summary">
                 </button>
                 <label for="delivery"><b>Instructions</b></label>
                 <textarea type="text" id="address" class="form-control" placeholder="Additional instructions" required></textarea>
 
-                <button type="button" class="btn" >Checkout</button>
-                <button type="button" class="btn cancel" onclick="closeCheckOut()">Back</button>
+                <a href="#receipt"><button <a href="#receipt" type="button" class="btn" onclick="getValue();">Checkout</button></a>
             </form>
                 </div>
                   </form>
