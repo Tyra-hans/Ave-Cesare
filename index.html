@@ -127,46 +127,45 @@
                     <h1 class="menu">Ave Cesare</h1>
                     <form class="form-container">
                       <label for="Pizza"><b>Pizza</b></label>
-                      <select required class="form-control" id="pizza">
+                      <select required class="form-control" id="pizza7">
                           <option></option>
-                          <option id="jalapenolapazzia" value="jalapeno ;a pazzia KES 1,000">
+                          <option id="jalapenolapazzia" value="1000 KES jalapeno la pazzia KES ">
                             Jalapeno la pazzia KES 1,000</option>
-                          <option id="prosciuttoeninsalata" value="prosciutto en isnalata KES 1,500">pronsciutto en insalata KES 1,500</option>
-                          <option id="cesaregrile" value="Cesare Grille Kes 2,000">sesare grille KES 2,000</option>
+                          <option id="prosciuttoeninsalata" value="1500 KES prosciutto en isnalata">pronsciutto
+                            en insalata KES 1,500</option>
+                          <option id="cesaregrile" value="2000 KES Cesare Grille">sesare grille KES 2,000</option>
                       </select>
                         <label for="size"><b>Size</b></label>
                         <select required class="form-control" id="size">
                             <option></option>
-                            <option id="regular" value="regular KES 1,000">Regular KES 1,000</option>
-                            <option id="medium" value="Medium KES 1,500">Medium KES 1,500</option>
-                            <option id="large" value="large Kes 2,000">Large KES 2,000</option>
+                            <option id="regular" value="1000 KES regular">Regular KES 1,000</option>
+                            <option id="medium" value="1500 KES Medium">Medium KES 1,500</option>
+                            <option id="large" value="2000 KES large">Large KES 2,000</option>
                         </select>
                         <label for="crust"><b>Crust</b></label>
                         <select required class="form-control" id="crust">
                             <option></option>
-                            <option id="crispy" value="crispy KES 200">Crispy KES 200</option>
-                            <option id="stuffed" value="stuffed KES 150">Stuffed KES 150</option>
-                            <option id="glutten-free" value="gluttenFree KES 300">Glutten-free KES 300</option>
+                            <option id="crispy" value="200 KES crispy">Crispy KES 200</option>
+                            <option id="stuffed" value="150 KES stuffed">Stuffed KES 150</option>
+                            <option id="glutten-free" value="300 KES Glutten Free ">Glutten-free KES 300</option>
                         </select>
                         <label for="toppings"><b>Toppings</b></label>
                         <select required class="form-control mb-2" id="topping">
                             <option></option>
-                            <option id="jalapeno" value="jalapeno KES-150">Jalapeno KES-150</option>
-                            <option id="corny" value="corny KES-200">corny-bbq KES-200</option>
-                            <option id="cesare" value="cesare deluxe  KES-100">cesare deluxe KES-100</option>
-                            <option id="bologna" value="bologna-cesare KES-150">bologna-cesare KES-150</option>
+                            <option id="jalapeno" value="150 KES jalapeno">Jalapeno KES-150</option>
+                            <option id="corny" value="200 KES corny">corny-bbq KES-200</option>
+                            <option id="cesare" value="100 KES cesare deluxe">cesare deluxe KES-100</option>
+                            <option id="bologna" value="150 KES bologna-cesare">bologna-cesare KES-150</option>
                         </select>
                         <label for="delivery"><b>Delivery</b></label>
                         <select required class="form-control" id="delivery">
                             <option></option>
-                            <option id="delivery1" value="delivery -KES 200">Delivery -KES 200</option>
+                            <option id="delivery1" value="200 KES delivery">Delivery -KES 200</option>
                             <option id="pickup" value="pickup">pickup</option>
                         </select>
                         <label for="amount">amount</label>
                         <input id="amount" class="product-quantity" name="product_quantity" value="0">
                         <button type="button" class="btn" onclick="getValue();">Add to Cart</button>
-                        <button type="button" class="btn buy">Add and Order more</button>
-                        <button type="button" class="btn cancel">Back</button>
                     </form>
                   </div>
                 </div>
@@ -182,7 +181,7 @@
                 <label for="delivery"><b>Instructions</b></label>
                 <textarea type="text" id="address" class="form-control" placeholder="Additional instructions" required></textarea>
 
-                <button type="button" class="btn" onclick="closeCheckOut(); confirmationPopUp();">Checkout</button>
+                <button type="button" class="btn" >Checkout</button>
                 <button type="button" class="btn cancel" onclick="closeCheckOut()">Back</button>
             </form>
                 </div>
@@ -195,6 +194,7 @@
                     <div class="col-md-12">
                       <div class="receipt" id="receipt">
                         <p id="receiptvalue"></p>
+                        <p id="receiptvalue1"></p>
                       </div>
                     </div>
                   </div>
