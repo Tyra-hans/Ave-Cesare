@@ -12,6 +12,7 @@
   <script src="js/popper.js"></script>
   <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
   <script src=js/scripts.js></script>
+
   <title>Ave cesare</title>
 </head>
 <body>
@@ -42,8 +43,8 @@
                         <div class="card-body">
                           <h5 class="card-title">jalapeno la pazzia</h5>
                           <p class="card-text">mouth watering jalapeno madness</p>
-                          <p class="card-footer">kes 1050</p>
-                          <p id="#jalapeno2" class="btn btn-warning" value="jalapeno" onclick="getValue()" >add to cart</p>
+                          <p class="card-footer" id="jalapeno2" value="jalapeno 1050">kes 1050</p>
+                          <button id="jalapeno1" class="btn btn-warning" value="jalapeno" onclick="getVal();">add to cart</button>
                         </div>
                       </div>
                     </div>
@@ -120,6 +121,7 @@
             <div class="col-md-12">
               <h1 class="menu" id="checkout">checkout</h1>
               <div class="text-wrapper2">
+                <div class="row">
                 <div class="bg-modal col-md-6">
                   <div class="modal-content">
                     <h1 class="menu">Ave Cesare</h1>
@@ -127,9 +129,9 @@
                         <label for="size"><b>Size</b></label>
                         <select required class="form-control" id="size">
                             <option></option>
-                            <option id="regular" value="reg">Regular KES 1,000</option>
-                            <option id="medium" value="med">Medium KES 1,500</option>
-                            <option id="large" value="lar">Large KES 2,000</option>
+                            <option id="regular" value="regular KES 1,000">Regular KES 1,000</option>
+                            <option id="medium" value="Medium KES 1,500">Medium KES 1,500</option>
+                            <option id="large" value="large Kes 2,000">Large KES 2,000</option>
                         </select>
                         <label for="crust"><b>Crust</b></label>
                         <select required class="form-control" id="crust">
@@ -139,7 +141,7 @@
                             <option id="glutten-free" value="gluttenFree">Glutten-free KES 300</option>
                         </select>
                         <label for="toppings"><b>Toppings</b></label>
-                        <select required class="form-control mb-2" id="toppings">
+                        <select required class="form-control mb-2" id="topping">
                             <option></option>
                             <option id="jalapeno" value="jalapeno">Jalapeno KES-150</option>
                             <option id="corny" value="corny">corny-bbq KES-200</option>
@@ -154,31 +156,33 @@
                         </select>
                         <label for="amount">amount</label>
                         <input id="amount" class="product-quantity" name="product_quantity" value="0">
-                        <button type="button" class="btn" onclick="closeForm(); openCheckOut(); addCartPizza();">Add to Cart</button>
-                        <button type="button" class="btn buy" onclick="closeForm();addCartPizza();">Add and Order more</button>
-                        <button type="button" class="btn cancel" onclick="closeForm()">Back</button>
+                        <button type="button" class="btn" onclick="getValue();">Add to Cart</button>
+                        <button type="button" class="btn buy">Add and Order more</button>
+                        <button type="button" class="btn cancel" ">Back</button>
                     </form>
                   </div>
                 </div>
+                  <form class="form-container checkout">
                 <div class="col-md-6" >
-                  <form class="form-container">
-                <h2>Checkout</h2>
                 <label for="name"><b>Name</b></label>
-                <input type="text" id="name" placeholder="name.." name="name" required>
+                <input type="text"class="form-control" id="name" placeholder="name.." name="name" required>
 
                 <label for="phone"><b>contacts</b></label>
-                <input type="text" placeholder="07XXXXXXXX" name="number" required>
+                <input type="text" class="form-control" placeholder="07XXXXXXXX" name="number" required>
                 <button type="button" class="btn summary">
-                    <p id="summary">Summary</p>
                 </button>
                 <label for="delivery"><b>Instructions</b></label>
-                <textarea type="text" id="address" placeholder="Additional instructions" required></textarea>
+                <textarea type="text" id="address" class="form-control" placeholder="Additional instructions" required></textarea>
 
                 <button type="button" class="btn" onclick="closeCheckOut(); confirmationPopUp();">Checkout</button>
                 <button type="button" class="btn cancel" onclick="closeCheckOut()">Back</button>
             </form>
                 </div>
                   </form>
+                  <div class="receipt" id="receipt">
+                    <p id="receiptvalue"></p>
+                  </div>
+                </div>
                 </div>
               </div>
             </div>
