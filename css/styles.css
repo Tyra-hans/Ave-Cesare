@@ -115,3 +115,19 @@ float: right;
 .form-control{
   width:500px;
 }
+.receipt{
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Gayathri', sans-serif;
+}
+.text-wrapper4{
+  background-image: url(../images/pizzawood.jpg);
+  text-align: center;
+  color: white;
+  padding-top: 10%;
+  padding-bottom: 5%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
