@@ -20,8 +20,14 @@
     <div class="text-wrapper-X">
       <div class="row">
         <div class="col-sm-12">
-          <div class="col-md-12">
+          <div class="col-md-12" id="home">
             <div class="text-wrapper">
+              <div class="topnav">
+          <a class="active" href="#home">Home</a>
+          <a href="#menu">menu</a>
+          <a href="#toppings">toppings</a>
+          <a href="#checkout">checkout</a>
+        </div>
               <h1 class="title">Ave cesare</h1>
               <p class="title1">pizza like never before</p>
             </div>
@@ -29,14 +35,14 @@
         </div>
         <!-- menu section -->
         <div class="container-fluid" id="types">
-          <h1 class="menu">MENU</h1>
+          <h1 class="menu" id="menu">MENU</h1>
           <div class="container">
             <div class="text-wrapper3">
               <div class="owl-carousel owl-theme">
                 <div class="row">
                   <div class="row">
                     <div class="col-md-4 item">
-                      <div class="card zoom one">
+                      <div class="card zoom one" id="pizza1">
                         <img src="images/pizza1.jpg" class="card-img-top img-thumbnail" alt="">
                         <div class="card-body">
                           <h5 class="card-title">jalapeno la pazzia</h5>
@@ -52,7 +58,14 @@
                               <option value="cheese">cheese</option>
                               <option value="thin">thin crust</option>
                             </select>
-                            
+                            <select name="toppings">
+                              <option value="jalapeno">jalapeno</option>
+                              <option value="corny-bbq">corny-bbq</option>
+                              <option value="mushroom">mushroom</option>
+                              <option value="bologna">bologna</option>
+                              <option value="deluxe">deluxe</option>
+                            </select>
+
                           </form>
                           <p class="card-footer">kes 1050</p>
                           <a href="#new-contact" id="#jalapeno" class="btn btn-warning">add to cart</a>
@@ -127,7 +140,7 @@
         </div>
         <!-- toppings section -->
         <div class="container-fluid">
-          <h1 class="menu">Toppings</h1>
+          <h1 class="menu" id="toppings">Toppings</h1>
           <div class="owl-carousel owl-theme">
             <div class="item" style="width:250px; height:300px" id="topping1">
               <img src="images/jalapeno.jpg" alt="" class="zoom topping">
@@ -166,7 +179,7 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-md-12">
-              <h1 class="menu">Order Now</h1>
+              <h1 class="menu" id="checkout">checkout</h1>
               <div class="text-wrapper2">
                 <div class="col-md-4">
                   <form id="new-contact">

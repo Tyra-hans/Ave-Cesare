@@ -23,4 +23,7 @@ $(document).ready(function() {
   $("form#new-contact").submit(function(event) {
     event.preventDefault();
 })
+var pizza1=document.getElementById("pizza1").value;
+var pizza2=document.getElementById("pizza2").value;
+var pizza3=document.getElementById("pizza3").value;
 });
