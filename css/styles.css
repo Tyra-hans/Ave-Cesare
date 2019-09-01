@@ -103,14 +103,13 @@ h2{
   width:30%;
 }
 .modal-content{
-border-color: transparent;
-text-align: center;
-background-color: transparent;
-font-family: 'Gayathri', sans-serif;
+  border-color: transparent;
+  background-color: transparent;
+  font-family: 'Gayathri', sans-serif;
 }
 .checkout{
-margin-top: 140px;
-float: right;
+  margin-top: 140px;
+  float: right;
 }
 .form-control{
   width:500px;
@@ -130,4 +129,34 @@ float: right;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+}
+#receiptvalue{
+  background-color: black;
+  opacity: 0.7;
+  border-radius: 4px;
+}
+.lables {
+  margin-top: 20px;
+
+}
+/* MEDIA QUERIES */
+@media screen  and  (max-width:1000px)  {
+  .text-wrapper{
+    width:100%;
+  }
+  .text-wrapper img{
+    width:100%;
+  }
+  .title , .title1{
+    width:100%;
+  }
+  .menu{
+    width: 100%;
+  }
+  .card{
+    width:100%;
+  }
+  .topping{
+    width:100%;
+  }
 }

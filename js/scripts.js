@@ -57,18 +57,17 @@ function getValue() {
   var name =document.getElementById("name").value;
   var number=document.getElementById("number").value;
   var adress=document.getElementById("address").value;
-// form validation
-if (pizza !== true){
-  alert("please select pizza");
-  return false;
-} else if (size.selected !== true) {
-  alert("please select size");
-  return false;
-}else if (getAmount=="") {
-  alert("please key in amount");
-  return false;
-} else{
-  alert("your order is on the way " + name + "!");
-}
-
+  // form validation
+  if (pizza !== true){
+    alert("please select pizza");
+    return false;
+  } else if (size.selected !== true) {
+    alert("please select size");
+    return false;
+  }else if (getAmount=="") {
+    alert("please key in amount");
+    return false;
+  } else{
+    alert("your order is on the way " + name + "!");
+  }
 }
