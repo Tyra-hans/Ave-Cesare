@@ -58,16 +58,12 @@ function getValue() {
   var number=document.getElementById("number").value;
   var adress=document.getElementById("address").value;
   // form validation
-  if (pizza !== true){
-    alert("please select pizza");
+  if((pizza == "") || (size == "") || (crust == "") || (topping == "") || (getAmount== 0 ) || (name == "")){
+    alert ("please fill all fields");
     return false;
-  } else if (size.selected !== true) {
-    alert("please select size");
-    return false;
-  }else if (getAmount=="") {
-    alert("please key in amount");
-    return false;
-  } else{
-    alert("your order is on the way " + name + "!");
+  }else {
+      alert("your order is on the way " + name + "!");
   }
+
+
 }
