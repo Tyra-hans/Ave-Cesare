@@ -58,17 +58,7 @@ body{
 }
 .three{
   background-color: #CD212A;
-}
-.topping1 , .topping2 , .topping3 , .topping4, .topping5{
-  display: none;
-  text-align: center;
-  font-size: 30px;
-  font-family: sans-serif;
-  color: white;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
+
 }
 .topping{
   transition:transform .2s;
