@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
   $('.owl-carousel').owlCarousel({
     margin:10,
     autoWidth:true,
@@ -39,8 +38,7 @@ function getValue() {
   var topping = getTopping.options[getTopping.selectedIndex].value;
   var getDelivery = document.getElementById("delivery");
   var delivery = getDelivery.options[getDelivery.selectedIndex].value;
-
-  // set value fo pizza1
+  // set values for variables
   document.getElementById("receiptvalue").innerHTML="Your order: <br>" + pizza + "</br>" +size +"<br>"
   + crust + "<br>" + topping+ "<br>" + getAmount + "<br>" + delivery;
   var pizzaNum = parseInt(pizza);
@@ -53,7 +51,6 @@ function getValue() {
   console.log(total);
   document.getElementById("receiptvalue1").innerHTML="Your total charge: " + total;
   // getting name and adress values
-
   var name =document.getElementById("name").value;
   var number=document.getElementById("number").value;
   var adress=document.getElementById("address").value;
@@ -62,8 +59,6 @@ function getValue() {
     alert ("please fill all fields");
     return false;
   }else {
-      alert("your order is on the way " + name + "!");
+    alert("your order is on the way " + name + "!");
   }
-
-
 }
